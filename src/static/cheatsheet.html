@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" class="TridactylOwnNamespace">
+    <head>
+        <meta charset="utf-8" />
+        <title>Tridactyl Keyboard Shortcuts</title>
+        <script src="/content.js"></script>
+        <link rel="stylesheet" href="/static/css/content.css" />
+        <link rel="stylesheet" href="/static/css/hint.css" />
+        <link rel="stylesheet" href="css/cheatsheet.css" />
+        <link rel="shortcut icon" href="logo/Tridactyl_64px.png" />
+    </head>
+    <body>
+        <div class="modal-overlay" id="modal-overlay">
+            <div class="modal-container">
+                <header class="modal-header">
+                    <h1>Keyboard shortcuts</h1>
+                </header>
+
+                <nav class="mode-selector" id="mode-selector">
+                    <button data-mode="normal" class="active">Normal</button>
+                    <button data-mode="hint">Hinting</button>
+                    <button data-mode="insert">Insert</button>
+                    <button data-mode="command">Command</button>
+                    <button data-mode="visual">Visual</button>
+                    <button data-mode="ignore">Ignore</button>
+                </nav>
+
+                <div class="modal-content">
+                    <main class="cheatsheet-grid" id="cheatsheet-content">
+                        <!-- Dynamically populated by cheatsheet-modal.js -->
+                    </main>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../cheatsheet.js"></script>
+</html>

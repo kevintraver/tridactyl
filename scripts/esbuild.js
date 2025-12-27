@@ -1,6 +1,6 @@
 const esbuild = require('esbuild')
 
-for (let f of ["content", "background", "help", "newtab", "reader", "commandline_frame", "qrCodeGenerator"]) {
+for (let f of ["content", "background", "help", "newtab", "reader", "commandline_frame", "qrCodeGenerator", "cheatsheet"]) {
         esbuild.build({
         entryPoints: [`src/${f}.ts`],
         bundle: true,
